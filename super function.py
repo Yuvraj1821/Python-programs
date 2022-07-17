@@ -1,10 +1,10 @@
-class Rectangle:
+class Area:
     def __init__(self, length, width):
         self.length = length
         self.width = width
 
 
-class Square(Rectangle):
+class Square(Area):
     def __init__(self, length, width):
         super().__init__(length, width)
 
@@ -12,7 +12,7 @@ class Square(Rectangle):
         return self.length * self.width
 
 
-class Cube(Rectangle):
+class Cube(Area):
     def __init__(self, length, width, height):
         super().__init__(length, width)
         self.height = height
